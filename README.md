@@ -3,6 +3,7 @@
 - origin: net-speeder, fork from https://github.com/snooda/net-speeder
 - purpose: double the outgoing traffic according to BPF rule
 - example: `PacketDoubler eth0 "tcp src port 443"`
+- release: https://github.com/SiyaCheung/packet-doubler/releases/
 
 ## runtime
 
@@ -26,7 +27,7 @@ ldd PacketDoubler
 
 ### build release
 - `mkdir -p build && cd build`
-- `cmake -DCMAKE_BUILD_TYPE=Release`
+- `cmake ../ -DCMAKE_BUILD_TYPE=Release`
 - `make`
 
 ## etc:
